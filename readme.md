@@ -6,7 +6,8 @@ This is a Portfolio Website built with React + Typescript and scss. This project
 
 In the project directory, you can run:
 
-### `npm start`
+
+### `npm run dev`
 
 Runs the app in the development mode.
 Open http://localhost:3001 to view it in your browser.
