@@ -1,8 +1,9 @@
 import './App.scss'
+import Intro from './components/Intro/Intro'
 
 export const App = (): JSX.Element => {
     return (
-        <h1>Hello world</h1>
+        <Intro />
     )
 }
 
