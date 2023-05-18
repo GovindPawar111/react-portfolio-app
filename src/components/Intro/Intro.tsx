@@ -2,6 +2,7 @@ import './Intro.scss'
 import cloud from './../../images/cloud.png'
 import cloudSoft from './../../images/cloud-soft.png'
 import NavigationBar from '../NavigationBar/NavigationBar'
+import IntroContent from '../IntroContent/IntroContent'
 
 export const Intro = (): JSX.Element => {
     return (
@@ -11,6 +12,7 @@ export const Intro = (): JSX.Element => {
             <img src={cloud} className="cloud" />
             <div className="content">
                 <NavigationBar />
+                <IntroContent />
             </div>
         </div>
     )
