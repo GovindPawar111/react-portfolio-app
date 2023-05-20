@@ -2,6 +2,7 @@ import React from 'react'
 import './Contact.scss'
 import SectionComponent from '../sharedComponent/SectionComponent/SectionComponent'
 import ContactInfo from './ContactInfo/ContactInfo'
+import Form from './Form/Form'
 
 const Contact: React.FC = () => {
     return (
@@ -12,6 +13,7 @@ const Contact: React.FC = () => {
         >
             <div className="contact-content-wrapper">
                 <ContactInfo />
+                <Form />
             </div>
         </SectionComponent>
     )
