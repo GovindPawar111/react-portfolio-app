@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import './BlogCard.scss'
 import Arrow from './../../sharedComponent/Arrow/Arrow'
 
@@ -12,7 +12,7 @@ interface BlogCardProps {
 
 const BlogCard: React.FC<BlogCardProps> = (props) => {
     return (
-        <div className='blog-card'>
+        <div className="blog-card">
             <div className="image-section">
                 <img src={props.image} alt={props.title} />
             </div>
@@ -21,9 +21,7 @@ const BlogCard: React.FC<BlogCardProps> = (props) => {
                     <div className="user-name">By {props.user}</div>
                     <div className="posted-date">{props.date}</div>
                 </div>
-                <h3>
-                    {props.title}
-                </h3>
+                <h3>{props.title}</h3>
                 <p>{props.description}</p>
                 <div className="read-more-cta">
                     <span className="text"></span>
@@ -34,4 +32,4 @@ const BlogCard: React.FC<BlogCardProps> = (props) => {
     )
 }
 
-export default BlogCard;
+export default BlogCard

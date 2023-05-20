@@ -19,65 +19,65 @@ const projectsData: ProjectsData[] = [
         name: 'Healthy Food Restraint',
         tags: ['web-app', 'mobile-app'],
         media: {
-            thumbnail: thumb7
-        }
+            thumbnail: thumb7,
+        },
     },
     {
         id: 2,
         name: 'Anna & Daniel',
         tags: ['web-page'],
         media: {
-            thumbnail: thumb2
-        }
+            thumbnail: thumb2,
+        },
     },
     {
         id: 3,
         name: 'Web Design Landing Page',
         tags: ['web-app'],
         media: {
-            thumbnail: thumb8
-        }
+            thumbnail: thumb8,
+        },
     },
     {
         id: 4,
         name: 'Business Analytics Web App',
         tags: ['web-app', 'mobile-app'],
         media: {
-            thumbnail: thumb1
-        }
+            thumbnail: thumb1,
+        },
     },
     {
         id: 5,
         name: 'limitless',
         tags: ['product', 'web-app', 'web-page'],
         media: {
-            thumbnail: thumb6
-        }
+            thumbnail: thumb6,
+        },
     },
     {
         id: 6,
         name: 'Dashboard',
         tags: ['web-app', 'mobile-app'],
         media: {
-            thumbnail: thumb4
-        }
+            thumbnail: thumb4,
+        },
     },
     {
         id: 7,
         name: 'Digital Creative Agency',
         tags: ['web-app'],
         media: {
-            thumbnail: thumb3
-        }
+            thumbnail: thumb3,
+        },
     },
     {
         id: 8,
         name: 'Virtual Reality Experience',
         tags: ['web-app', 'mobile-app', 'web-page', 'product'],
         media: {
-            thumbnail: thumb5
-        }
-    }
+            thumbnail: thumb5,
+        },
+    },
 ]
 
 const Portfolio: React.FC = () => {
@@ -90,7 +90,9 @@ const Portfolio: React.FC = () => {
             if (tag === 'all') {
                 setProjects(projectsData)
             } else {
-                const filteredProject = projectsData.filter(project => project.tags.includes(tag))
+                const filteredProject = projectsData.filter((project) =>
+                    project.tags.includes(tag)
+                )
                 setProjects(filteredProject)
             }
             setTransition('zoom-in')
@@ -107,7 +109,7 @@ const Portfolio: React.FC = () => {
             title="Check my Portfolio"
             background={'light'}
         >
-            <div className='portfolio-content-wrapper'>
+            <div className="portfolio-content-wrapper">
                 <Filters onFilterProjectHandler={filterProjectsHandler} />
                 <ShowCase data={projects} transition={transition} />
             </div>

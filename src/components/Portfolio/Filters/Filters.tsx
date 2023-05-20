@@ -39,8 +39,10 @@ const Filters: React.FC<FiltersProps> = (props) => {
 
     return (
         <ul className="filter-menu-items">
-            {FiltersData.map(item => {
-                const FiltersClassName = classNames('filter-menu-item', { active: activeFilter === item.id })
+            {FiltersData.map((item) => {
+                const FiltersClassName = classNames('filter-menu-item', {
+                    active: activeFilter === item.id,
+                })
                 return (
                     <li
                         key={item.id}
