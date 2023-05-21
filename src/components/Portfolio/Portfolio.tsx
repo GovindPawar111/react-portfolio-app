@@ -108,6 +108,7 @@ const Portfolio: React.FC = () => {
             id="portfolio"
             title="Check my Portfolio"
             background={'light'}
+            className="portfolio"
         >
             <div className="portfolio-content-wrapper">
                 <Filters onFilterProjectHandler={filterProjectsHandler} />

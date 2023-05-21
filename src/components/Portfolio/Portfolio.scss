@@ -1,2 +1,8 @@
 @import '../../style/variable.scss';
 @import '../../style/mixins.scss';
+
+.portfolio-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}

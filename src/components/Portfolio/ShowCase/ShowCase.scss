@@ -5,17 +5,31 @@
     display: flex;
     flex-flow: row wrap;
     margin: 0 -10px;
-    height: 570px;
+    justify-content: center;
+
+    @include small-screen {
+        height: 570px;
+    }
+
+    @include large-screen {
+        justify-content: unset;
+    }
 
     .showcase-item {
-        width: 265px;
-        height: 265px;
+        width: 150px;
+        height: 150px;
         overflow: hidden;
-        border-radius: 16px;
+        border-radius: 6px;
         margin: 10px;
         position: relative;
         cursor: pointer;
         @include transition;
+
+        @include small-screen {
+            width: 265px;
+            height: 265px;
+            border-radius: 16px;
+        }
 
         img {
             width: 100%;
@@ -25,16 +39,25 @@
         }
 
         .meta-content {
-            visibility: hidden;
-            opacity: 0;
+            visibility: visible;
+            opacity: 1;
             position: absolute;
-            bottom: 0;
-            left: 20px;
+            bottom: 4px;
+            left: 4px;
             padding: 10px;
-            margin-right: 20px;
-            border-radius: 10px;
+            border-radius: 5px;
+            width: 90%;
             @include glassmorphism-effect;
             @include transition;
+
+            @include small-screen {
+                width: fit-content;
+                visibility: hidden;
+                margin-right: 20px;
+                border-radius: 10px;
+                left: 20px;
+                padding: 10px;
+            }
 
             h3 {
                 color: $black;
@@ -69,13 +92,15 @@
         }
 
         &:hover {
-            z-index: 1;
-            transform: scale(1.2);
-            box-shadow: 0 0 33px -8px rgba(0, 0, 0, 0.75);
-            .meta-content {
-                visibility: visible;
-                opacity: 1;
-                transform: translateY(-20px);
+            @include small-screen {
+                z-index: 1;
+                transform: scale(1.2);
+                box-shadow: 0 0 33px -8px rgba(0, 0, 0, 0.75);
+                .meta-content {
+                    visibility: visible;
+                    opacity: 1;
+                    transform: translateY(-20px);
+                }
             }
         }
     }
