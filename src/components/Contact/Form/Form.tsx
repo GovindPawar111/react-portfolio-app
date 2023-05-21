@@ -6,6 +6,10 @@ import { useForm } from 'react-hook-form'
 import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 
+const serviceId = import.meta.env.VITE_PORTFOLIO_SERVICE_ID
+const templateId = import.meta.env.VITE_PORTFOLIO_TEMPLATE_ID
+const userId = import.meta.env.VITE_PORTFOLIO_USER_ID
+
 const Form: React.FC = () => {
     const {
         register,
@@ -13,22 +17,21 @@ const Form: React.FC = () => {
         formState: { errors },
     } = useForm<FormData>()
 
-    const submitHandler = () => {
-        handleSubmit((data: any) => {
-            send(
-                'service_vchik9g',
-                'template_x4j919w',
-                data,
-                '-jdHrSGzfHqL0ZbNa'
-            )
+    const submitHandler = (data: any) => {
+        if (
+            serviceId !== undefined &&
+            templateId !== undefined &&
+            userId !== undefined
+        ) {
+            send(serviceId, templateId, data, userId)
                 .then((response) => {
-                    console.log('success', response.status, response.text)
+                    console.log('success', response.status)
                     formSuccess()
                 })
                 .catch((error) => {
                     console.log('Failed', error)
                 })
-        })
+        }
     }
 
     const formSuccess = (): void => {
@@ -42,7 +45,7 @@ const Form: React.FC = () => {
     return (
         <div className="query-form">
             <ToastContainer />
-            <form id="queryForm" onSubmit={() => submitHandler}>
+            <form id="queryForm" onSubmit={handleSubmit(submitHandler)}>
                 <div className="input-field">
                     <input type="text" name="from-name" placeholder="Name" />
                 </div>
