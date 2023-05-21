@@ -6,7 +6,7 @@ import IntroContent from '../IntroContent/IntroContent'
 
 export const Intro = (): JSX.Element => {
     return (
-        <div className="intro-section">
+        <div id="home" className="intro-section">
             <div className="vector-bg" id="parallax"></div>
             <img src={cloudSoft} className="cloud-soft" />
             <img src={cloud} className="cloud" />
