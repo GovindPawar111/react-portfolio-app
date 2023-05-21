@@ -1,11 +1,11 @@
 import React from 'react'
 import './IntroContent.scss'
-import handIcon from '../../images/hand.png'
-import CallToAction from '../sharedComponent/CallToAction/CallToAction'
-import mainImage from '../../images/girl.png'
+import handIcon from '../../../images/hand.png'
+import CallToAction from '../../sharedComponent/CallToAction/CallToAction'
+import mainImage from '../../../images/girl.png'
 import { BsAwardFill } from 'react-icons/bs'
 import { FaUser } from 'react-icons/fa'
-import scrollToSection from '../../utils/helper'
+import scrollToSection from '../../../utils/helper'
 
 const IntroContent: React.FC = () => {
     return (

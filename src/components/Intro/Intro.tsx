@@ -1,8 +1,8 @@
 import './Intro.scss'
 import cloud from './../../images/cloud.png'
 import cloudSoft from './../../images/cloud-soft.png'
-import NavigationBar from '../NavigationBar/NavigationBar'
-import IntroContent from '../IntroContent/IntroContent'
+import NavigationBar from './NavigationBar/NavigationBar'
+import IntroContent from './IntroContent/IntroContent'
 
 export const Intro = (): JSX.Element => {
     return (
