@@ -4,13 +4,27 @@
 .intro-content {
     display: flex;
     flex-grow: 1;
-    align-items: flex-end;
+    padding-top: 75px;
+
+    @include small-screen {
+        padding-top: 0;
+        align-items: flex-end;
+    }
 
     .layout {
         display: flex;
+        flex-direction: column;
+
+        @include small-screen {
+            flex-direction: row;
+        }
 
         .left-col {
-            width: 45%;
+            width: 100%;
+
+            @include small-screen {
+                width: 45%;
+            }
 
             @include medium-screen {
                 padding-top: 55px;
@@ -25,11 +39,22 @@
                 display: flex;
                 flex-direction: column;
                 color: $white;
+                text-align: center;
+
+                @include small-screen {
+                    text-align: left;
+                }
 
                 .small-text {
-                    @include typography(32px, 400, 48px);
+                    @include typography(24px, 400, 30px);
                     display: flex;
                     align-items: center;
+                    justify-content: center;
+
+                    @include small-screen {
+                        justify-content: flex-start;
+                        @include typography(32px, 400, 48px);
+                    }
 
                     .icon {
                         margin-left: 10px;
@@ -37,22 +62,48 @@
                 }
 
                 .big-text {
-                    @include typography(52px, 400, 48px);
+                    @include typography(42px, 400, 52px);
+
+                    @include small-screen {
+                        @include typography(52px, 400, 48px);
+                    }
                 }
             }
 
             p {
                 color: $white;
-                margin: 25px 0;
-                @include typography(16px, 400, 24px);
+                margin: 15px 0;
+                padding: 0 15px;
+                @include typography(14px, 400, 24px);
+                text-align: center;
+
+                @include small-screen {
+                    margin: 25px 0;
+                    padding: 0;
+                    @include typography(16px, 400, 24px);
+                    text-align: left;
+                }
+            }
+
+            .call-to-action {
+                margin: 0 auto;
+                @include small-screen {
+                    margin: 0;
+                }
             }
         }
 
         .right-col {
-            width: 55%;
+            width: 100%;
             display: flex;
             align-items: flex-end;
             position: relative;
+            flex-grow: 1;
+
+            @include small-screen {
+                width: 55%;
+                flex-grow: unset;
+            }
 
             @include large-screen {
                 width: 63%;
@@ -61,7 +112,11 @@
             img {
                 width: 100%;
                 display: block;
-                margin-bottom: 40px;
+                margin-bottom: 30px;
+
+                @include small-screen {
+                    margin-bottom: 40px;
+                }
 
                 @include large-screen {
                     margin-bottom: 50px;
@@ -75,6 +130,11 @@
                 border-radius: 6px;
                 background-color: $white;
                 @include glassmorphism-effect;
+                transform: scale(0.6);
+
+                @include small-screen {
+                    transform: scale(1);
+                }
 
                 .icon {
                     width: 55px;
@@ -104,9 +164,14 @@
                     height: 95px;
                     display: flex;
                     align-items: center;
-                    top: 250px;
-                    left: 0;
+                    top: 190px;
+                    left: -20px;
                     padding: 20px 10px 20px 20px;
+
+                    @include small-screen {
+                        top: 250px;
+                        left: 0;
+                    }
 
                     @include medium-screen {
                         top: 250px;
@@ -127,10 +192,15 @@
                     flex-direction: column;
                     align-items: center;
                     top: 50px;
-                    right: 60px;
+                    right: 0px;
                     padding: 20px;
                     padding-bottom: 10px;
                     text-align: center;
+
+                    @include small-screen {
+                        top: 50px;
+                        right: 60px;
+                    }
 
                     @include medium-screen {
                         top: 50px;
