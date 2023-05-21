@@ -10,6 +10,14 @@ const serviceId = import.meta.env.VITE_PORTFOLIO_SERVICE_ID
 const templateId = import.meta.env.VITE_PORTFOLIO_TEMPLATE_ID
 const userId = import.meta.env.VITE_PORTFOLIO_USER_ID
 
+type FormData = {
+    'from-name': string
+    'reply-to': string
+    'phone-number': string
+    subject: string
+    message: string
+}
+
 const Form: React.FC = () => {
     const {
         register,
@@ -47,26 +55,72 @@ const Form: React.FC = () => {
             <ToastContainer />
             <form id="queryForm" onSubmit={handleSubmit(submitHandler)}>
                 <div className="input-field">
-                    <input type="text" name="from-name" placeholder="Name" />
-                </div>
-                <div className="input-field">
-                    <input type="text" name="reply-to" placeholder="Email" />
+                    <input
+                        type="text"
+                        placeholder="Name"
+                        {...register('from-name', {
+                            required: true,
+                            maxLength: {
+                                value: 16,
+                                message: 'Maximum 16 characters are allowed',
+                            },
+                        })}
+                    />
                 </div>
                 <div className="input-field">
                     <input
                         type="text"
-                        name="phone-number"
-                        placeholder="Phone"
+                        placeholder="Email"
+                        {...register('reply-to', {
+                            required: true,
+                            pattern: {
+                                value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                                message: 'Invalid email address',
+                            },
+                        })}
                     />
                 </div>
                 <div className="input-field">
-                    <input type="text" name="subject" placeholder="Subject" />
+                    <input
+                        type="text"
+                        placeholder="Phone number"
+                        {...register('phone-number', {
+                            required: true,
+                            minLength: {
+                                value: 8,
+                                message: 'Phone number is not valid',
+                            },
+                        })}
+                    />
+                </div>
+                <div className="input-field">
+                    <input
+                        type="text"
+                        placeholder="Subject"
+                        {...register('subject', {
+                            required: true,
+                            minLength: {
+                                value: 10,
+                                message: 'Minimum 10 characters required',
+                            },
+                        })}
+                    />
                 </div>
                 <div className="input-field full-width">
                     <textarea
                         className="textarea"
-                        name="message"
                         placeholder="Your message"
+                        {...register('message', {
+                            required: true,
+                            minLength: {
+                                value: 20,
+                                message: 'Minimum 20 characters required',
+                            },
+                            maxLength: {
+                                value: 500,
+                                message: 'maximum 500 characters allowed',
+                            },
+                        })}
                     />
                 </div>
 
