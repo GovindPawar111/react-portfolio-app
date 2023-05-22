@@ -80,6 +80,7 @@
             bottom: 30px;
             left: 30px;
             cursor: pointer;
+            color: $black;
 
             .text {
                 @include typography(18px 500 20px);

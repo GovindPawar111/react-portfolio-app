@@ -11,10 +11,6 @@
         height: 570px;
     }
 
-    @include large-screen {
-        justify-content: unset;
-    }
-
     .showcase-item {
         width: 150px;
         height: 150px;
