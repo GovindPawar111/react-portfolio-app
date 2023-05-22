@@ -64,13 +64,24 @@
             .go-to-cta {
                 display: flex;
                 align-items: center;
-                .text {
-                    @include typography(10px, 400, 18px);
-                }
-                .arrow-icon {
-                    width: 15px;
-                    height: 15px;
-                    margin-left: 5px;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                min-width: 140px;
+
+                a {
+                    text-decoration: none;
+                    color:$black;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: $yellow;
+                    width: 40%;
+                    border-radius: 6px;
+                    @include typography(11px, 400, 18px);
+
+                    svg{
+                        margin-left: 3px;
+                    }
                 }
             }
         }

@@ -76,7 +76,7 @@ const Footer: React.FC = () => {
                 <div className="bottom-bar">
                     <div className="copyright-text">
                         {`Copyright ${currentYear} Govind Pawar Portfolio | All
-                        Rights Reserved`}
+                        Rights Reserved.`}
                     </div>
                 </div>
             </div>

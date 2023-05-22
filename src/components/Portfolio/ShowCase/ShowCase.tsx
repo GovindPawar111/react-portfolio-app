@@ -1,8 +1,9 @@
 import React from 'react'
 import './ShowCase.scss'
 import ProjectsData from '../../../models/ShowCaseModel'
-import Arrow from './../../sharedComponent/Arrow/Arrow'
 import classNames from 'classnames'
+import { BsGithub } from 'react-icons/bs'
+import { AiOutlineLink } from 'react-icons/ai'
 
 interface ShowCaseProps {
     data: ProjectsData[]
@@ -19,8 +20,12 @@ const ShowCase: React.FC<ShowCaseProps> = (props) => {
                     <div className="meta-content">
                         <h3>{project.name}</h3>
                         <div className="go-to-cta">
-                            <span className="text">Project Details</span>
-                            <Arrow />
+                            <a href={project?.liveLink} target="_blank">
+                                Demo <AiOutlineLink />
+                            </a>
+                            <a href={project?.githubLink} target="_blank">
+                                Github <BsGithub />
+                            </a>
                         </div>
                     </div>
                     <img src={project.media.thumbnail} alt="project" />

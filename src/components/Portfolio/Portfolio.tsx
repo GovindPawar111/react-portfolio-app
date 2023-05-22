@@ -18,6 +18,8 @@ const projectsData: ProjectsData[] = [
         id: 1,
         name: 'Healthy Food Restraint',
         tags: ['static-page'],
+        liveLink: 'https://github.com/GovindPawar111/react-portfolio-app',
+        githubLink: 'https://github.com/GovindPawar111/react-portfolio-app',
         media: {
             thumbnail: thumb7,
         },
@@ -26,6 +28,8 @@ const projectsData: ProjectsData[] = [
         id: 2,
         name: 'Anna & Daniel',
         tags: ['static-page'],
+        liveLink: 'https://github.com/GovindPawar111/react-portfolio-app',
+        githubLink: 'https://github.com/GovindPawar111/react-portfolio-app',
         media: {
             thumbnail: thumb2,
         },
@@ -34,6 +38,8 @@ const projectsData: ProjectsData[] = [
         id: 3,
         name: 'Web Design Landing Page',
         tags: ['react-app'],
+        liveLink: 'https://github.com/GovindPawar111/react-portfolio-app',
+        githubLink: 'https://github.com/GovindPawar111/react-portfolio-app',
         media: {
             thumbnail: thumb8,
         },
@@ -42,6 +48,8 @@ const projectsData: ProjectsData[] = [
         id: 4,
         name: 'Business Analytics Web App',
         tags: ['react-app'],
+        liveLink: 'https://github.com/GovindPawar111/react-portfolio-app',
+        githubLink: 'https://github.com/GovindPawar111/react-portfolio-app',
         media: {
             thumbnail: thumb1,
         },
@@ -50,6 +58,8 @@ const projectsData: ProjectsData[] = [
         id: 5,
         name: 'limitless',
         tags: ['react-app', 'mern-app'],
+        liveLink: 'https://github.com/GovindPawar111/react-portfolio-app',
+        githubLink: 'https://github.com/GovindPawar111/react-portfolio-app',
         media: {
             thumbnail: thumb6,
         },
@@ -58,6 +68,8 @@ const projectsData: ProjectsData[] = [
         id: 6,
         name: 'Dashboard',
         tags: ['react-app', 'mern-app'],
+        liveLink: 'https://github.com/GovindPawar111/react-portfolio-app',
+        githubLink: 'https://github.com/GovindPawar111/react-portfolio-app',
         media: {
             thumbnail: thumb4,
         },
@@ -66,6 +78,8 @@ const projectsData: ProjectsData[] = [
         id: 7,
         name: 'Digital Creative Agency',
         tags: ['react-app', 'mern-app'],
+        liveLink: 'https://github.com/GovindPawar111/react-portfolio-app',
+        githubLink: 'https://github.com/GovindPawar111/react-portfolio-app',
         media: {
             thumbnail: thumb3,
         },
@@ -74,6 +88,8 @@ const projectsData: ProjectsData[] = [
         id: 8,
         name: 'Virtual Reality Experience',
         tags: ['react-app', 'mern-app'],
+        liveLink: 'https://github.com/GovindPawar111/react-portfolio-app',
+        githubLink: 'https://github.com/GovindPawar111/react-portfolio-app',
         media: {
             thumbnail: thumb5,
         },
