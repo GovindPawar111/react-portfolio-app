@@ -8,16 +8,16 @@ const ContactInfo: React.FC = () => {
     return (
         <div className="contact-info-box">
             <h4>
-                I would be happy to answer any question you may have about
-                freelance writing or content marketing!
+                It would be delighted to talk to you. Please feel free to
+                contact me at the specified phone number or email address.
             </h4>
             <div className="contact-option">
                 <FaPhoneAlt />
-                <span className="text">+91 8945613785</span>
+                <span className="text">+91 7218302823</span>
             </div>
             <div className="contact-option">
                 <MdEmail />
-                <span className="text">pawargovind@gmail.com</span>
+                <span className="text">pawargovind511@gmail.com</span>
             </div>
         </div>
     )

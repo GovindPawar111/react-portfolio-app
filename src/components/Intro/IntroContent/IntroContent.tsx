@@ -5,13 +5,13 @@ import CallToAction from '../../sharedComponent/CallToAction/CallToAction'
 import mainImage from '../../../images/girl.png'
 import { BsAwardFill } from 'react-icons/bs'
 import { FaUser } from 'react-icons/fa'
-import scrollToSection from '../../../utils/helper'
+import { AiOutlineCloudDownload } from 'react-icons/ai'
 
 const IntroContent: React.FC = () => {
     return (
         <div className="intro-content">
             <div className="layout">
-                <div className="left-col">
+                <div className="left-col  highlight">
                     <h1 className="title">
                         <span className="small-text">
                             <span className="text">Hello</span>
@@ -29,28 +29,12 @@ const IntroContent: React.FC = () => {
                         facilis fuga eligendi error eveniet?
                     </p>
                     <CallToAction
-                        text="Contact me"
-                        action={() => scrollToSection('contact')}
+                        text="Resume"
+                        icon={<AiOutlineCloudDownload />}
                     />
                 </div>
                 <div className="right-col">
                     <img src={mainImage} alt="hero section" />
-                    <div className="highlight horizontal">
-                        <div className="icon">
-                            <BsAwardFill />
-                        </div>
-                        <div className="text">Best Design Award</div>
-                    </div>
-
-                    <div className="highlight vertical">
-                        <div className="icon">
-                            <FaUser />
-                        </div>
-                        <div className="text">
-                            <span>4k</span>
-                            Happy Customers
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>

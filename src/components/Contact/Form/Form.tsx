@@ -158,7 +158,7 @@ const Form: React.FC = () => {
                     )}
                 </div>
 
-                <button type="submit">Submit</button>
+                <button type="submit">Send</button>
             </form>
         </div>
     )

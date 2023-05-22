@@ -26,7 +26,7 @@ const Skills: React.FC = () => {
                         sapiente? Laborum!
                     </p>
                     <CallToAction
-                        text={'Download CV'}
+                        text={'Resume'}
                         icon={<AiOutlineCloudDownload />}
                     />
                 </div>

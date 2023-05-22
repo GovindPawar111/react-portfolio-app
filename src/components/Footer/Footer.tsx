@@ -4,7 +4,8 @@ import SectionComponent from '../sharedComponent/SectionComponent/SectionCompone
 import SocialIcon from '../sharedComponent/SocialIcon/SocialIcon'
 
 import { scrollToSection } from './../../utils/helper'
-import { FaYoutube, FaGithub, FaLinkedinIn, FaInstagram } from 'react-icons/fa'
+import { FaGithub, FaLinkedinIn, FaInstagram } from 'react-icons/fa'
+import { SiLeetcode } from 'react-icons/si'
 
 const Footer: React.FC = () => {
     const currentYear = new Date().getFullYear()
@@ -48,24 +49,26 @@ const Footer: React.FC = () => {
                 </ul>
                 <div className="social-icons">
                     <SocialIcon
-                        icon={<FaYoutube />}
-                        color={'#ff0000'}
-                        link={'https://www.youtube.com/'}
-                    />
-                    <SocialIcon
                         icon={<FaGithub />}
                         color={'#0d2636'}
-                        link={'https://www.youtube.com/'}
+                        link={'https://github.com/GovindPawar111'}
                     />
                     <SocialIcon
                         icon={<FaLinkedinIn />}
                         color={'#0a66c2'}
-                        link={'https://www.youtube.com/'}
+                        link={
+                            'https://in.linkedin.com/in/govind-pawar?trk=people-guest_people_search-card&original_referer=https%3A%2F%2Fwww.linkedin.com%2F'
+                        }
+                    />
+                    <SocialIcon
+                        icon={<SiLeetcode />}
+                        color={'#fea016'}
+                        link={'https://leetcode.com/Govind5225/'}
                     />
                     <SocialIcon
                         icon={<FaInstagram />}
                         color={'#e84c88'}
-                        link={'https://www.youtube.com/'}
+                        link={'https://www.instagram.com/govindpawar1999/'}
                     />
                 </div>
 
