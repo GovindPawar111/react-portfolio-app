@@ -4,8 +4,9 @@ import SectionComponent from '../sharedComponent/SectionComponent/SectionCompone
 import SocialIcon from '../sharedComponent/SocialIcon/SocialIcon'
 
 import { scrollToSection } from './../../utils/helper'
-import { FaGithub, FaLinkedinIn, FaInstagram } from 'react-icons/fa'
+import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
 import { SiLeetcode } from 'react-icons/si'
+import { MdOutlineMail } from 'react-icons/md'
 
 const Footer: React.FC = () => {
     const currentYear = new Date().getFullYear()
@@ -49,6 +50,11 @@ const Footer: React.FC = () => {
                 </ul>
                 <div className="social-icons">
                     <SocialIcon
+                        icon={<MdOutlineMail />}
+                        color={'#f1592b'}
+                        email="pawargovind511@gmail.com"
+                    ></SocialIcon>
+                    <SocialIcon
                         icon={<FaGithub />}
                         color={'#0d2636'}
                         link={'https://github.com/GovindPawar111'}
@@ -64,11 +70,6 @@ const Footer: React.FC = () => {
                         icon={<SiLeetcode />}
                         color={'#fea016'}
                         link={'https://leetcode.com/Govind5225/'}
-                    />
-                    <SocialIcon
-                        icon={<FaInstagram />}
-                        color={'#e84c88'}
-                        link={'https://www.instagram.com/govindpawar1999/'}
                     />
                 </div>
 

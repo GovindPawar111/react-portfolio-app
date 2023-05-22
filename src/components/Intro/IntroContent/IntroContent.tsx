@@ -3,9 +3,8 @@ import './IntroContent.scss'
 import handIcon from '../../../images/hand.png'
 import CallToAction from '../../sharedComponent/CallToAction/CallToAction'
 import mainImage from '../../../images/girl.png'
-import { BsAwardFill } from 'react-icons/bs'
-import { FaUser } from 'react-icons/fa'
-import { AiOutlineCloudDownload } from 'react-icons/ai'
+import { RiExternalLinkLine } from 'react-icons/ri'
+import { downloadResume } from '../../../utils/helper'
 
 const IntroContent: React.FC = () => {
     return (
@@ -30,7 +29,8 @@ const IntroContent: React.FC = () => {
                     </p>
                     <CallToAction
                         text="Resume"
-                        icon={<AiOutlineCloudDownload />}
+                        icon={<RiExternalLinkLine />}
+                        action={downloadResume}
                     />
                 </div>
                 <div className="right-col">

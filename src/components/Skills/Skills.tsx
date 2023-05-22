@@ -3,7 +3,8 @@ import './Skill.scss'
 import SectionComponent from '../sharedComponent/SectionComponent/SectionComponent'
 import techIcons from '../../images/tech-icons.png'
 import CallToAction from '../sharedComponent/CallToAction/CallToAction'
-import { AiOutlineCloudDownload } from 'react-icons/ai'
+import { RiExternalLinkLine } from 'react-icons/ri'
+import { downloadResume } from '../../utils/helper'
 
 const Skills: React.FC = () => {
     return (
@@ -27,7 +28,8 @@ const Skills: React.FC = () => {
                     </p>
                     <CallToAction
                         text={'Resume'}
-                        icon={<AiOutlineCloudDownload />}
+                        icon={<RiExternalLinkLine />}
+                        action={downloadResume}
                     />
                 </div>
             </div>

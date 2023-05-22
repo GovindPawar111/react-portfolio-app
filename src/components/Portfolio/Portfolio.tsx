@@ -17,7 +17,7 @@ const projectsData: ProjectsData[] = [
     {
         id: 1,
         name: 'Healthy Food Restraint',
-        tags: ['web-app', 'mobile-app'],
+        tags: ['static-page'],
         media: {
             thumbnail: thumb7,
         },
@@ -25,7 +25,7 @@ const projectsData: ProjectsData[] = [
     {
         id: 2,
         name: 'Anna & Daniel',
-        tags: ['web-page'],
+        tags: ['static-page'],
         media: {
             thumbnail: thumb2,
         },
@@ -33,7 +33,7 @@ const projectsData: ProjectsData[] = [
     {
         id: 3,
         name: 'Web Design Landing Page',
-        tags: ['web-app'],
+        tags: ['react-app'],
         media: {
             thumbnail: thumb8,
         },
@@ -41,7 +41,7 @@ const projectsData: ProjectsData[] = [
     {
         id: 4,
         name: 'Business Analytics Web App',
-        tags: ['web-app', 'mobile-app'],
+        tags: ['react-app'],
         media: {
             thumbnail: thumb1,
         },
@@ -49,7 +49,7 @@ const projectsData: ProjectsData[] = [
     {
         id: 5,
         name: 'limitless',
-        tags: ['product', 'web-app', 'web-page'],
+        tags: ['react-app', 'mern-app'],
         media: {
             thumbnail: thumb6,
         },
@@ -57,7 +57,7 @@ const projectsData: ProjectsData[] = [
     {
         id: 6,
         name: 'Dashboard',
-        tags: ['web-app', 'mobile-app'],
+        tags: ['react-app', 'mern-app'],
         media: {
             thumbnail: thumb4,
         },
@@ -65,7 +65,7 @@ const projectsData: ProjectsData[] = [
     {
         id: 7,
         name: 'Digital Creative Agency',
-        tags: ['web-app'],
+        tags: ['react-app', 'mern-app'],
         media: {
             thumbnail: thumb3,
         },
@@ -73,7 +73,7 @@ const projectsData: ProjectsData[] = [
     {
         id: 8,
         name: 'Virtual Reality Experience',
-        tags: ['web-app', 'mobile-app', 'web-page', 'product'],
+        tags: ['react-app', 'mern-app'],
         media: {
             thumbnail: thumb5,
         },

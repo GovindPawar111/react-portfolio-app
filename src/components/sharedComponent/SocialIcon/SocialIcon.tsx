@@ -3,7 +3,8 @@ import React, { ReactNode } from 'react'
 interface SocialIconProps {
     icon: ReactNode
     color: string
-    link: string
+    link?: string
+    email?: string
 }
 
 const SocialIcon: React.FC<SocialIconProps> = (props) => {
@@ -12,7 +13,12 @@ const SocialIcon: React.FC<SocialIconProps> = (props) => {
             className="social-icon"
             style={{ backgroundColor: props.color }}
             onClick={() => {
-                window.open(props.link, '_blank')
+                if (props.email) {
+                    const emailTo = 'mailto:' + props.email
+                    window.location.href = emailTo
+                } else {
+                    window.open(props.link, '_blank')
+                }
             }}
         >
             {props.icon}

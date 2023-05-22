@@ -8,20 +8,16 @@ const FiltersData = [
         id: 'all',
     },
     {
-        name: 'Web Apps',
-        id: 'web-app',
+        name: 'React Apps',
+        id: 'react-app',
     },
     {
-        name: 'Web Pages',
-        id: 'web-page',
+        name: 'MERN Apps',
+        id: 'mern-app',
     },
     {
-        name: 'Mobile-Apps',
-        id: 'mobile-app',
-    },
-    {
-        name: 'Products',
-        id: 'product',
+        name: 'Static Pages',
+        id: 'static-page',
     },
 ]
 
