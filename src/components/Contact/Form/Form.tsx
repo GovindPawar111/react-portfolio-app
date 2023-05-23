@@ -25,7 +25,7 @@ const Form: React.FC = () => {
         formState: { errors },
     } = useForm<FormData>()
 
-    const submitHandler = (data: any) => {
+    const submitHandler = (data: FormData) => {
         if (
             serviceId !== undefined &&
             templateId !== undefined &&
@@ -38,12 +38,23 @@ const Form: React.FC = () => {
                 })
                 .catch((error) => {
                     console.log('Failed', error)
+                    formFailed()
                 })
         }
     }
 
     const formSuccess = (): void => {
-        toast('Thanks for submitting your Query!')
+        toast('Thank you! Your message has been received.')
+        const formElement = document.querySelector('form')
+        if (formElement) {
+            formElement.reset()
+        }
+    }
+
+    const formFailed = (): void => {
+        toast.error('Oops! Something went wrong. Please try again.', {
+            theme: 'dark',
+        })
         const formElement = document.querySelector('form')
         if (formElement) {
             formElement.reset()
