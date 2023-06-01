@@ -11,13 +11,14 @@ const FiltersData = [
         name: 'React Apps',
         id: 'react-app',
     },
-    {
-        name: 'MERN Apps',
-        id: 'mern-app',
-    },
+
     {
         name: 'Static Pages',
         id: 'static-page',
+    },
+    {
+        name: 'Other Apps',
+        id: 'other',
     },
 ]
 

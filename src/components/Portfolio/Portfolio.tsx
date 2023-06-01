@@ -4,94 +4,83 @@ import SectionComponent from '../sharedComponent/SectionComponent/SectionCompone
 import Filters from './Filters/Filters'
 import ProjectsData from '../../models/ShowCaseModel'
 import ShowCase from './ShowCase/ShowCase'
-import thumb1 from '../../images/portfolio/thumb-1.jpg'
-import thumb2 from '../../images/portfolio/thumb-2.jpg'
-import thumb3 from '../../images/portfolio/thumb-3.jpg'
-import thumb4 from '../../images/portfolio/thumb-4.jpg'
-import thumb5 from '../../images/portfolio/thumb-5.jpg'
-import thumb6 from '../../images/portfolio/thumb-6.jpg'
-import thumb7 from '../../images/portfolio/thumb-7.jpg'
-import thumb8 from '../../images/portfolio/thumb-8.jpg'
+import thumb1 from '../../images/portfolio/thumb-1.png'
+import thumb2 from '../../images/portfolio/thumb-2.png'
+import thumb3 from '../../images/portfolio/thumb-3.png'
+import thumb4 from '../../images/portfolio/thumb-4.png'
+import thumb5 from '../../images/portfolio/thumb-5.png'
+import thumb6 from '../../images/portfolio/thumb-6.png'
+import thumb7 from '../../images/portfolio/thumb-7.png'
 
 const projectsData: ProjectsData[] = [
     {
         id: 1,
-        name: 'Healthy Food Restraint',
+        name: 'Website For Candies',
         tags: ['static-page'],
-        liveLink: 'https://github.com/GovindPawar111/react-portfolio-app',
-        githubLink: 'https://github.com/GovindPawar111/react-portfolio-app',
+        liveLink: 'https://govindpawar111.github.io/websiteForCandies/',
+        githubLink: 'https://github.com/GovindPawar111/websiteForCandies',
         media: {
-            thumbnail: thumb7,
+            thumbnail: thumb1,
         },
     },
     {
         id: 2,
-        name: 'Anna & Daniel',
+        name: 'Image Gallery',
         tags: ['static-page'],
-        liveLink: 'https://github.com/GovindPawar111/react-portfolio-app',
-        githubLink: 'https://github.com/GovindPawar111/react-portfolio-app',
+        liveLink: 'https://govindpawar111.github.io/imageGallery/',
+        githubLink: 'https://github.com/GovindPawar111/imageGallery',
         media: {
             thumbnail: thumb2,
         },
     },
     {
         id: 3,
-        name: 'Web Design Landing Page',
-        tags: ['react-app'],
-        liveLink: 'https://github.com/GovindPawar111/react-portfolio-app',
-        githubLink: 'https://github.com/GovindPawar111/react-portfolio-app',
-        media: {
-            thumbnail: thumb8,
-        },
-    },
-    {
-        id: 4,
-        name: 'Business Analytics Web App',
-        tags: ['react-app'],
-        liveLink: 'https://github.com/GovindPawar111/react-portfolio-app',
-        githubLink: 'https://github.com/GovindPawar111/react-portfolio-app',
-        media: {
-            thumbnail: thumb1,
-        },
-    },
-    {
-        id: 5,
-        name: 'limitless',
-        tags: ['react-app', 'mern-app'],
-        liveLink: 'https://github.com/GovindPawar111/react-portfolio-app',
-        githubLink: 'https://github.com/GovindPawar111/react-portfolio-app',
-        media: {
-            thumbnail: thumb6,
-        },
-    },
-    {
-        id: 6,
-        name: 'Dashboard',
-        tags: ['react-app', 'mern-app'],
-        liveLink: 'https://github.com/GovindPawar111/react-portfolio-app',
-        githubLink: 'https://github.com/GovindPawar111/react-portfolio-app',
-        media: {
-            thumbnail: thumb4,
-        },
-    },
-    {
-        id: 7,
-        name: 'Digital Creative Agency',
-        tags: ['react-app', 'mern-app'],
-        liveLink: 'https://github.com/GovindPawar111/react-portfolio-app',
-        githubLink: 'https://github.com/GovindPawar111/react-portfolio-app',
+        name: 'Table Tennis Score Keeper',
+        tags: ['static-page'],
+        liveLink: 'https://govindpawar111.github.io/tableTennisScoreKeeper/',
+        githubLink: 'https://github.com/GovindPawar111/tableTennisScoreKeeper',
         media: {
             thumbnail: thumb3,
         },
     },
     {
-        id: 8,
-        name: 'Virtual Reality Experience',
-        tags: ['react-app', 'mern-app'],
-        liveLink: 'https://github.com/GovindPawar111/react-portfolio-app',
-        githubLink: 'https://github.com/GovindPawar111/react-portfolio-app',
+        id: 4,
+        name: 'Blog Post Node App',
+        tags: ['other'],
+        liveLink: 'https://blogpostnodeapplication.onrender.com/',
+        githubLink: 'https://github.com/GovindPawar111/blog_post_app',
+        media: {
+            thumbnail: thumb4,
+        },
+    },
+    {
+        id: 5,
+        name: 'Expense Tracker App',
+        tags: ['react-app'],
+        liveLink: 'https://expense-traker-application.netlify.app/',
+        githubLink: 'https://github.com/GovindPawar111/expesnseTrackerApp',
         media: {
             thumbnail: thumb5,
+        },
+    },
+    {
+        id: 6,
+        name: 'Note Taking App',
+        tags: ['react-app'],
+        liveLink: 'https://notetaking-application.netlify.app/',
+        githubLink: 'https://github.com/GovindPawar111/react-note-app',
+        media: {
+            thumbnail: thumb6,
+        },
+    },
+    {
+        id: 7,
+        name: 'React Portfolio App',
+        tags: ['react-app'],
+        liveLink: 'https://govind-pawar.netlify.app/',
+        githubLink: 'https://github.com/GovindPawar111/react-portfolio-app',
+        media: {
+            thumbnail: thumb7,
         },
     },
 ]
