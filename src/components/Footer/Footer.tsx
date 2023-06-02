@@ -10,7 +10,7 @@ import { MdOutlineMail } from 'react-icons/md'
 const Footer: React.FC = () => {
     const currentYear = new Date().getFullYear()
     return (
-        <SectionComponent background="dark" className="footer">
+        <SectionComponent background="light" className="footer">
             <div className="footer-content-wrapper">
                 <div className="footer-title">
                     <h1>Govind Pawar</h1>

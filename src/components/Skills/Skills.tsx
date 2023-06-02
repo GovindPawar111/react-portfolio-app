@@ -8,7 +8,7 @@ import { downloadResume } from '../../utils/helper'
 
 const Skills: React.FC = () => {
     return (
-        <SectionComponent id={'skills'} background={'dark'}>
+        <SectionComponent id={'skills'} background={'light'}>
             <div className="skills-content-wrapper">
                 <div className="left-col">
                     <img src={techIcons} alt="JS, React, HTML, CSS" />

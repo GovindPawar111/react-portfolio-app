@@ -22,9 +22,8 @@ const IntroContent: React.FC = () => {
                         <span className="big-text">Govind Pawar</span>
                     </h1>
                     <p>
-                        I'm full-stack developer based in Pune, India. I have 2
-                        years of experience building and designing software. and
-                        I'm very passionate and dedicated to my work...
+                        I'm full-stack developer based in Pune, India. and I'm
+                        very passionate and dedicated to my work...
                     </p>
                     <CallToAction
                         text="Resume"

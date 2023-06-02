@@ -9,7 +9,7 @@ const Contact: React.FC = () => {
         <SectionComponent
             id="contact"
             title="Any Question? Feel Free to Contact"
-            background={'light'}
+            background={'dark'}
         >
             <div className="contact-content-wrapper">
                 <ContactInfo />

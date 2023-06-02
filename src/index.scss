@@ -26,13 +26,13 @@ h2 {
     }
 }
 h3 {
-    @include typography(14px, 500, 1.2);
+    @include typography(14px, 400, 1.2);
     @include small-screen {
         @include typography(26px, 500, 1.2);
     }
 }
 h4 {
-    @include typography(16px, 500, 1.2);
+    @include typography(12px, 400, 1.2);
     @include small-screen {
         @include typography(22px, 500, 1.2);
     }

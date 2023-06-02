@@ -1,0 +1,80 @@
+@import '../../style/variable.scss';
+@import '../../style/mixins.scss';
+
+.about-content-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 2.5rem 0 1rem 0;
+
+    @include small-screen {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 4rem 0 2rem 0;
+        column-gap: 6rem;
+    }
+
+    .left-col {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2rem;
+
+        @include small-screen {
+            margin-bottom: 0;
+            justify-content: end;
+        }
+
+        .about-img {
+            cursor: pointer;
+            width: 250px;
+            border-radius: 1rem;
+            @include transition;
+
+            &:hover {
+                @include small-screen {
+                    z-index: 1;
+                    transform: scale(1.2);
+                    box-shadow: 0 0 33px -8px rgba(0, 0, 0, 0.75);
+                    .meta-content {
+                        visibility: visible;
+                        opacity: 1;
+                        transform: translateY(-20px);
+                    }
+                }
+            }
+
+            @include small-screen {
+                width: 350px;
+                border-radius: 1.5rem;
+            }
+        }
+    }
+
+    .right-col {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @include small-screen {
+            align-items: start;
+        }
+
+        .info-section {
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            column-gap: 0.8rem;
+            margin-bottom: 1rem;
+        }
+
+        .about-description {
+            margin-bottom: 1rem;
+            color: $white;
+            text-align: center;
+            @include typography(18px, 400, 24px);
+
+            @include small-screen {
+                text-align: start;
+            }
+        }
+    }
+}
