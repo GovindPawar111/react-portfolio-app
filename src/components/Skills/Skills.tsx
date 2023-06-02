@@ -1,36 +1,118 @@
 import React from 'react'
 import './Skill.scss'
 import SectionComponent from '../sharedComponent/SectionComponent/SectionComponent'
-import techIcons from '../../images/tech-icons.png'
-import CallToAction from '../sharedComponent/CallToAction/CallToAction'
-import { RiExternalLinkLine } from 'react-icons/ri'
-import { downloadResume } from '../../utils/helper'
+import { HiBadgeCheck } from 'react-icons/hi'
+
+const FrontEndSkillsData = [
+    {
+        name: 'HTML',
+        level: 'Intermediate',
+    },
+    {
+        name: 'CSS & SCSS',
+        level: 'Intermediate',
+    },
+    {
+        name: 'Javascript',
+        level: 'Intermediate',
+    },
+    {
+        name: 'Typescript',
+        level: 'Basic',
+    },
+    {
+        name: 'React',
+        level: 'Intermediate',
+    },
+    {
+        name: 'Bootstrap',
+        level: 'Basic',
+    },
+    {
+        name: 'Zustand',
+        level: 'Basic',
+    },
+]
+
+const BackEndSkillsData = [
+    {
+        name: 'Node.Js',
+        level: 'Basic',
+    },
+    {
+        name: 'Express',
+        level: 'Intermediate',
+    },
+    {
+        name: 'MongoDB',
+        level: 'Intermediate',
+    },
+    {
+        name: 'ASP.Net',
+        level: 'Intermediate',
+    },
+    {
+        name: 'REST API',
+        level: 'Basic',
+    },
+    {
+        name: 'Azure',
+        level: 'Basic',
+    },
+]
 
 const Skills: React.FC = () => {
     return (
-        <SectionComponent id={'skills'} background={'light'}>
+        <SectionComponent id={'skills'} title="Skills" background={'light'}>
             <div className="skills-content-wrapper">
-                <div className="left-col">
-                    <img src={techIcons} alt="JS, React, HTML, CSS" />
+                <div className="skills-content">
+                    <h3 className="skills-title">Frontend Stack</h3>
+                    <div className="skills-box">
+                        <div className="skills-group">
+                            {FrontEndSkillsData.map((data) => {
+                                return (
+                                    <div className="skills-data">
+                                        <div className="skills-icon">
+                                            <HiBadgeCheck />
+                                        </div>
+                                        <div>
+                                            <h3 className="skills-name">
+                                                {data.name}
+                                            </h3>
+                                            <span className="skills-level">
+                                                {data.level}
+                                            </span>
+                                        </div>
+                                    </div>
+                                )
+                            })}
+                        </div>
+                    </div>
                 </div>
-                <div className="right-col">
-                    <h2>Skills</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Ea unde perspiciatis illo saepe reprehenderit placeat
-                        rerum voluptates doloribus debitis quae repellendus,
-                        quam nostrum cum perferendis sequi quis. Itaque, earum
-                        odit. Lorem, ipsum dolor sit amet consectetur
-                        adipisicing elit. Ex quis pariatur architecto voluptates
-                        in vel modi tenetur corporis deserunt quod ducimus, eius
-                        delectus natus, corrupti quas exercitationem obcaecati
-                        sapiente? Laborum!
-                    </p>
-                    <CallToAction
-                        text={'Resume'}
-                        icon={<RiExternalLinkLine />}
-                        action={downloadResume}
-                    />
+
+                <div className="skills-content">
+                    <h3 className="skills-title">Backend Stack</h3>
+                    <div className="skills-box">
+                        <div className="skills-group">
+                            {BackEndSkillsData.map((data) => {
+                                return (
+                                    <div className="skills-data">
+                                        <div className="skills-icon">
+                                            <HiBadgeCheck />
+                                        </div>
+                                        <div>
+                                            <h3 className="skills-name">
+                                                {data.name}
+                                            </h3>
+                                            <span className="skills-level">
+                                                {data.level}
+                                            </span>
+                                        </div>
+                                    </div>
+                                )
+                            })}
+                        </div>
+                    </div>
                 </div>
             </div>
         </SectionComponent>
