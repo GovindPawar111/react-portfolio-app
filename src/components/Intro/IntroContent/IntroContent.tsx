@@ -17,15 +17,14 @@ const IntroContent: React.FC = () => {
                             <span className="icon">
                                 <img src={handIcon} />
                             </span>
-                            <span className="text">, I am</span>
+                            <span className="text">, I'm</span>
                         </span>
                         <span className="big-text">Govind Pawar</span>
                     </h1>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Soluta assumenda commodi ullam nam modi harum ratione
-                        minima vitae aperiam ex cum unde magni officiis magnam,
-                        facilis fuga eligendi error eveniet?
+                        I'm full-stack developer based in Pune, India. I have 2
+                        years of experience building and designing software. and
+                        I'm very passionate and dedicated to my work...
                     </p>
                     <CallToAction
                         text="Resume"

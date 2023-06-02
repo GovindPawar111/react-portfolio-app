@@ -27,7 +27,7 @@ const NavigationBar: React.FC = () => {
         <div className="top-navigation-bar">
             <div className="navigation-title">
                 <div className="navigation-item">
-                    <h1>Govind</h1>
+                    <h2>Govind</h2>
                 </div>
             </div>
             <div className="mobile-menu" onClick={menuClickHandler}>
