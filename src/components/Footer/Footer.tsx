@@ -4,8 +4,7 @@ import SectionComponent from '../sharedComponent/SectionComponent/SectionCompone
 import SocialIcon from '../sharedComponent/SocialIcon/SocialIcon'
 
 import { scrollToSection } from './../../utils/helper'
-import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
-import { SiLeetcode } from 'react-icons/si'
+import { FaGithub, FaLinkedinIn, FaWhatsapp } from 'react-icons/fa'
 import { MdOutlineMail } from 'react-icons/md'
 
 const Footer: React.FC = () => {
@@ -50,16 +49,6 @@ const Footer: React.FC = () => {
                 </ul>
                 <div className="social-icons">
                     <SocialIcon
-                        icon={<MdOutlineMail />}
-                        color={'#f1592b'}
-                        email="pawargovind511@gmail.com"
-                    ></SocialIcon>
-                    <SocialIcon
-                        icon={<FaGithub />}
-                        color={'#0d2636'}
-                        link={'https://github.com/GovindPawar111'}
-                    />
-                    <SocialIcon
                         icon={<FaLinkedinIn />}
                         color={'#0a66c2'}
                         link={
@@ -67,9 +56,19 @@ const Footer: React.FC = () => {
                         }
                     />
                     <SocialIcon
-                        icon={<SiLeetcode />}
-                        color={'#fea016'}
-                        link={'https://leetcode.com/Govind5225/'}
+                        icon={<FaGithub />}
+                        color={'#0d2636'}
+                        link={'https://github.com/GovindPawar111'}
+                    />
+                    <SocialIcon
+                        icon={<MdOutlineMail />}
+                        color={'#f1592b'}
+                        email="pawargovind511@gmail.com"
+                    ></SocialIcon>
+                    <SocialIcon
+                        icon={<FaWhatsapp />}
+                        color={'#00E676'}
+                        link={'https://wa.me/7218302823'}
                     />
                 </div>
 
