@@ -10,8 +10,10 @@ export const Intro = (): JSX.Element => {
             <div className="vector-bg" id="parallax"></div>
             <img src={cloudSoft} className="cloud-soft" />
             <img src={cloud} className="cloud" />
-            <div className="content">
+            <nav className="nav">
                 <NavigationBar />
+            </nav>
+            <div className="content">
                 <IntroContent />
             </div>
         </div>
