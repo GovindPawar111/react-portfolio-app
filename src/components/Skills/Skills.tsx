@@ -63,10 +63,10 @@ const BackEndSkillsData = [
 
 const Skills: React.FC = () => {
     return (
-        <SectionComponent id={'skills'} title="Skills" background={'light'}>
+        <SectionComponent id={'skills'} title="My Skills" background={'light'}>
             <div className="skills-content-wrapper">
                 <div className="skills-content">
-                    <h3 className="skills-title">Frontend Stack</h3>
+                    <h3 className="skills-title">Frontend Development</h3>
                     <div className="skills-box">
                         <div className="skills-group">
                             {FrontEndSkillsData.map((data) => {
@@ -91,7 +91,7 @@ const Skills: React.FC = () => {
                 </div>
 
                 <div className="skills-content">
-                    <h3 className="skills-title">Backend Stack</h3>
+                    <h3 className="skills-title">Backend Development</h3>
                     <div className="skills-box">
                         <div className="skills-group">
                             {BackEndSkillsData.map((data) => {

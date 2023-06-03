@@ -1,0 +1,51 @@
+@import '../../../style/variable.scss';
+@import '../../../style/mixins.scss';
+
+.info-content {
+    position: relative;
+    padding-left: 3rem;
+    padding-bottom: 3rem;
+
+    @include small-screen {
+    }
+
+    .info-icon {
+        position: absolute;
+        top: 0;
+        left: -0.45rem;
+        font-size: 22px;
+        color: $yellow;
+        background-color: $black-lighter;
+        padding: 0.3rem 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .info-year {
+        color: $gray-light;
+        @include typography(14px, 400, 16px);
+    }
+    .info-title {
+        color: $white;
+        @include typography(22px, 700, 24px);
+        margin: 0.5rem 0;
+    }
+    .info-text {
+        color: $gray-light;
+        @include typography(16px, 400, 22px);
+    }
+}
+
+.info-content:last-child {
+    padding-bottom: 0;
+}
+
+.info-content::before {
+    content: '';
+    width: 1px;
+    height: 100%;
+    background-color: $yellow;
+    position: absolute;
+    left: 0.25rem;
+}

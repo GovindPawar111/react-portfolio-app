@@ -8,7 +8,7 @@ import { downloadResume } from '../../utils/helper'
 import './About.scss'
 import InfoCard from '../sharedComponent/InfoCard/InfoCard'
 import { FaAward } from 'react-icons/fa'
-import { HiOutlineBriefcase } from 'react-icons/hi'
+import { BiBriefcase } from 'react-icons/bi'
 
 const About = (): React.ReactElement => {
     return (
@@ -24,14 +24,14 @@ const About = (): React.ReactElement => {
                 <div className="right-col">
                     <div className="info-section">
                         <InfoCard
-                            icon={<HiOutlineBriefcase />}
+                            icon={<BiBriefcase />}
                             title={'Experience'}
-                            subtitle={'2 Years Working'}
+                            subtitle={'2+ Years Working'}
                         />
                         <InfoCard
                             icon={<FaAward />}
                             title={'Projects'}
-                            subtitle={'10 + Completed'}
+                            subtitle={'10+ Completed'}
                         />
                     </div>
                     <p className="about-description">

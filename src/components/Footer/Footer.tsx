@@ -24,21 +24,27 @@ const Footer: React.FC = () => {
                     </li>
                     <li
                         className="footer-menu-item"
+                        onClick={() => scrollToSection('about')}
+                    >
+                        About
+                    </li>
+                    <li
+                        className="footer-menu-item"
                         onClick={() => scrollToSection('skills')}
                     >
                         Skills
                     </li>
                     <li
                         className="footer-menu-item"
-                        onClick={() => scrollToSection('portfolio')}
+                        onClick={() => scrollToSection('experience')}
                     >
-                        Portfolio
+                        Experience
                     </li>
                     <li
                         className="footer-menu-item"
-                        onClick={() => scrollToSection('blogs')}
+                        onClick={() => scrollToSection('portfolio')}
                     >
-                        Blog & Articles
+                        Portfolio
                     </li>
                     <li
                         className="footer-menu-item"

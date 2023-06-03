@@ -58,21 +58,27 @@ const NavigationBar: React.FC = () => {
                 </span>
                 <span
                     className="navigation-item"
+                    onClick={() => menuItemClickHandler('about')}
+                >
+                    About
+                </span>
+                <span
+                    className="navigation-item"
                     onClick={() => menuItemClickHandler('skills')}
                 >
                     Skills
                 </span>
                 <span
                     className="navigation-item"
-                    onClick={() => menuItemClickHandler('portfolio')}
+                    onClick={() => menuItemClickHandler('experience')}
                 >
-                    Portfolio
+                    Experience
                 </span>
                 <span
                     className="navigation-item"
-                    onClick={() => menuItemClickHandler('blogs')}
+                    onClick={() => menuItemClickHandler('portfolio')}
                 >
-                    Blog & Articles
+                    Portfolio
                 </span>
                 <CallToAction
                     text={'Contact me'}

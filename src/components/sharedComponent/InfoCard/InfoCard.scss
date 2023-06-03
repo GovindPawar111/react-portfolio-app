@@ -21,6 +21,7 @@
         .info-icon {
             @include typography(22px, 700px, 24px);
             margin-bottom: 0.8rem;
+            color: $yellow;
         }
 
         .info-title {
