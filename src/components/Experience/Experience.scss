@@ -16,8 +16,27 @@
 
     .info-container {
         background-color: $black-lighter;
-        padding: 2rem;
-        border-radius: 1.5rem;
+        padding: 1rem;
+        border-radius: 1.2rem;
         position: relative;
+        @include transition;
+
+        @include small-screen {
+            padding: 2rem;
+            border-radius: 1.5rem;
+        }
+
+        &:hover {
+            @include small-screen {
+                z-index: 1;
+                transform: scale(1.1);
+                box-shadow: 0 0 33px -8px rgba(0, 0, 0, 0.75);
+                .meta-content {
+                    visibility: visible;
+                    opacity: 1;
+                    transform: translateY(-20px);
+                }
+            }
+        }
     }
 }

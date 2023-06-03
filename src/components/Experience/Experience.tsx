@@ -9,16 +9,16 @@ const EducationData = [
     {
         id: '1',
         year: '2019 - 2022',
-        title: 'Bachelor of Technology in Mechanical Engineering',
+        title: 'B-Tech in Mechanical Engineering',
         description:
-            'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam cum asperiores perspiciatis a sint nihil incidunt',
+            'I graduated from the G. H. Raisoni College of Engineering and Management in Pune. During this course, I received an 8.2 CGPA. In the course, I learned about a variety of topics and completed a number of major and projects.',
     },
     {
         id: '1',
         year: '2016 - 2019',
         title: 'Diploma in Mechanical Engineering',
         description:
-            'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam cum asperiores perspiciatis a sint nihil incidunt',
+            'I graduated from the Government Polytechnic College in Solapur with a diploma in mechanical engineering. During this course, I received an 83%.',
     },
 ]
 
@@ -28,14 +28,14 @@ const ExperienceData = [
         year: '2022 - Present',
         title: 'Software Engineer',
         description:
-            'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam cum asperiores perspiciatis a sint nihil incidunt',
+            'Currently, I am working at Cyncly in the IS7 Pune Team. During this time, I worked on the latest technologies in web development. from front end to back end, like React, DotNet 6 with MongoDB, and Azure.',
     },
     {
         id: '1',
         year: '2021 - 2022',
         title: 'Software Engineer Intern',
         description:
-            'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam cum asperiores perspiciatis a sint nihil incidunt',
+            'I finished my 6-month internship at Cyncly. I worked with the Mooble team during this time. During this time, I learned about MVC architecture, Asp.net, and Javascript.',
     },
 ]
 

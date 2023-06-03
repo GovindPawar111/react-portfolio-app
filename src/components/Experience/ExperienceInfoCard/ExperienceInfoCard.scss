@@ -3,8 +3,13 @@
 
 .info-content {
     position: relative;
-    padding-left: 3rem;
-    padding-bottom: 3rem;
+    padding-left: 2rem;
+    padding-bottom: 2rem;
+
+    @include small-screen {
+        padding-left: 3rem;
+        padding-bottom: 3rem;
+    }
 
     @include small-screen {
     }
@@ -12,28 +17,45 @@
     .info-icon {
         position: absolute;
         top: 0;
-        left: -0.45rem;
-        font-size: 22px;
+        left: -0.3rem;
+        font-size: 18px;
         color: $yellow;
         background-color: $black-lighter;
         padding: 0.3rem 0;
         display: flex;
         justify-content: center;
         align-items: center;
+
+        @include small-screen {
+            font-size: 22px;
+            left: -0.45rem;
+        }
     }
 
     .info-year {
         color: $gray-light;
-        @include typography(14px, 400, 16px);
+        @include typography(12px, 400, 16px);
+
+        @include small-screen {
+            @include typography(14px, 400, 16px);
+        }
     }
     .info-title {
         color: $white;
-        @include typography(22px, 700, 24px);
+
+        @include typography(18px, 700, 22px);
+        @include small-screen {
+            @include typography(22px, 700, 24px);
+        }
         margin: 0.5rem 0;
     }
     .info-text {
         color: $gray-light;
-        @include typography(16px, 400, 22px);
+        @include typography(14px, 400, 22px);
+
+        @include small-screen {
+            @include typography(16px, 400, 22px);
+        }
     }
 }
 
