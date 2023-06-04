@@ -2,128 +2,138 @@
 @import '../../../style/mixins.scss';
 
 .intro-content {
-    display: flex;
-    flex-grow: 1;
-    padding-top: 75px;
+    display: grid;
+    grid-template-columns: 1fr;
 
     @include small-screen {
-        padding-top: 0;
-        align-items: flex-end;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0;
+        column-gap: 6rem;
     }
 
-    .layout {
+    @include medium-screen {
+        padding: 0 4rem;
+    }
+
+    @include large-screen {
+        padding: 0 4rem;
+    }
+
+    .left-col {
         display: flex;
         flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        width: 100%;
 
-        @include small-screen {
-            flex-direction: row;
-        }
-
-        .left-col {
-            width: 100%;
-
-            @include small-screen {
-                width: 45%;
-            }
-
-            @include medium-screen {
-                padding-top: 55px;
-            }
-
-            @include large-screen {
-                padding-top: 10px;
-                width: 37%;
-            }
-
-            .title {
-                display: flex;
-                flex-direction: column;
-                color: $white;
-                text-align: center;
-
-                @include small-screen {
-                    text-align: left;
-                }
-
-                .small-text {
-                    @include typography(24px, 400, 30px);
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-
-                    @include small-screen {
-                        justify-content: flex-start;
-                        @include typography(32px, 400, 48px);
-                    }
-
-                    .icon {
-                        margin-left: 10px;
-                    }
-                }
-
-                .big-text {
-                    @include typography(42px, 400, 52px);
-
-                    @include small-screen {
-                        @include typography(52px, 400, 48px);
-                    }
-                }
-            }
-
-            p {
-                color: $white;
-                margin: 15px 0;
-                padding: 0 15px;
-                @include typography(14px, 400, 24px);
-                text-align: center;
-
-                @include small-screen {
-                    margin: 25px 0;
-                    padding: 0;
-                    @include typography(16px, 400, 24px);
-                    text-align: left;
-                }
-            }
-
-            .call-to-action {
-                margin: 0 auto;
-                @include small-screen {
-                    margin: 0;
-                }
-            }
-        }
-
-        .right-col {
-            width: 100%;
+        .title {
             display: flex;
-            align-items: flex-end;
-            position: relative;
-            flex-grow: 1;
+            flex-direction: column;
+            color: $white;
+            text-align: left;
 
             @include small-screen {
-                width: 55%;
-                flex-grow: unset;
             }
 
-            @include large-screen {
-                width: 63%;
-            }
-
-            img {
-                width: 100%;
-                display: block;
-                margin-bottom: 30px;
+            .text {
+                @include typography(28px, 700, 32px);
 
                 @include small-screen {
-                    margin-bottom: 40px;
+                    @include typography(32px, 700, 36px);
+                }
+
+                @include medium-screen {
+                    @include typography(34px, 700, 48px);
                 }
 
                 @include large-screen {
-                    margin-bottom: 50px;
-                    position: relative;
-                    right: -180px;
+                    @include typography(40px, 700, 46px);
+                }
+            }
+            .icon {
+                margin-top: 5px;
+                margin-left: 5px;
+
+                img {
+                    width: 25px;
+                }
+
+                @include small-screen {
+                    margin-top: 10px;
+                    margin-left: 10px;
+
+                    img {
+                        width: 30px;
+                    }
+                }
+
+                @include medium-screen {
+                    margin-top: 10px;
+                    margin-left: 10px;
+
+                    img {
+                        width: 30px;
+                    }
                 }
             }
         }
+
+        p {
+            color: $white;
+            margin: 12px 0;
+            @include typography(14px, 400, 24px);
+            text-align: left;
+
+            @include small-screen {
+                margin: 20px 0;
+                @include typography(16px, 400, 24px);
+                text-align: left;
+            }
+        }
+    }
+
+    .right-col {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        img {
+            width: 400px;
+            display: none;
+            border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+            box-shadow: 0 0 0 9px rgba(255 255 255 / 30%);
+            animation: profile-animation 3s ease-in-out infinite 1s;
+
+            @include small-screen {
+                display: block;
+                width: 250px;
+            }
+
+            @include medium-screen {
+                display: block;
+                width: 300px;
+            }
+
+            @include large-screen {
+                display: block;
+                width: 400px;
+            }
+        }
+    }
+}
+
+@keyframes profile-animation {
+    0% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+
+    50% {
+        border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+    }
+
+    100% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
     }
 }

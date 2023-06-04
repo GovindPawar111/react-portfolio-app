@@ -3,7 +3,7 @@ import SectionComponent from '../sharedComponent/SectionComponent/SectionCompone
 import aboutImage from '../../images/about/about-img.jpg'
 import CallToAction from '../sharedComponent/CallToAction/CallToAction'
 import { RiExternalLinkLine } from 'react-icons/ri'
-import { downloadResume } from '../../utils/helper'
+import scrollToSection, { downloadResume } from '../../utils/helper'
 
 import './About.scss'
 import InfoCard from '../sharedComponent/InfoCard/InfoCard'
@@ -11,6 +11,10 @@ import { FaAward } from 'react-icons/fa'
 import { BiBriefcase } from 'react-icons/bi'
 
 const About = (): React.ReactElement => {
+    const infoCardClickHandler = (sectionId: string): void => {
+        scrollToSection(sectionId)
+    }
+
     return (
         <SectionComponent id="about" title="About Me" background={'dark'}>
             <div className="about-content-wrapper">
@@ -27,11 +31,13 @@ const About = (): React.ReactElement => {
                             icon={<BiBriefcase />}
                             title={'Experience'}
                             subtitle={'2+ Years Working'}
+                            onClick={() => infoCardClickHandler('experience')}
                         />
                         <InfoCard
                             icon={<FaAward />}
                             title={'Projects'}
                             subtitle={'10+ Completed'}
+                            onClick={() => infoCardClickHandler('experience')}
                         />
                     </div>
                     <p className="about-description">

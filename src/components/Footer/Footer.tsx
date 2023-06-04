@@ -80,8 +80,8 @@ const Footer: React.FC = () => {
 
                 <div className="bottom-bar">
                     <div className="copyright-text">
-                        {`Copyright ${currentYear} Govind Pawar Portfolio | All
-                        Rights Reserved.`}
+                        Copyright &#169; {currentYear} Govind Pawar. | All
+                        Rights Reserved.
                     </div>
                 </div>
             </div>
