@@ -37,7 +37,7 @@ const About = (): React.ReactElement => {
                             icon={<FaAward />}
                             title={'Projects'}
                             subtitle={'10+ Completed'}
-                            onClick={() => infoCardClickHandler('experience')}
+                            onClick={() => infoCardClickHandler('portfolio')}
                         />
                     </div>
                     <p className="about-description">
