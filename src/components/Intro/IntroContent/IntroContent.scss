@@ -90,6 +90,56 @@
                 text-align: left;
             }
         }
+
+        .links {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+
+            .social-links {
+                display: flex;
+                justify-content: start;
+                align-items: center;
+
+                @include small-screen {
+                    transform: scale(1);
+                }
+
+                .social-icon {
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 14px;
+                    margin-left: 10px;
+                    cursor: pointer;
+                    @include transition;
+
+                    &:hover {
+                        @include small-screen {
+                            background-color: $yellow !important;
+                            z-index: 1;
+                            transform: scale(1.2);
+                            box-shadow: 0 0 33px -8px rgba(0, 0, 0, 0.75);
+                            .meta-content {
+                                visibility: visible;
+                                opacity: 1;
+                                transform: translateY(-20px);
+                            }
+                        }
+                    }
+
+                    @include small-screen {
+                        font-size: 16px;
+                        margin-left: 12px;
+                        width: 35px;
+                        height: 35px;
+                    }
+                }
+            }
+        }
     }
 
     .right-col {

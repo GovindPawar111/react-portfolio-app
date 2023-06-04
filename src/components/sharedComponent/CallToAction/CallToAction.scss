@@ -2,9 +2,9 @@
 @import '../../../style/variable.scss';
 
 .call-to-action {
-    height: 47px;
+    height: 37px;
     width: fit-content;
-    padding: 0 15px;
+    padding: 0 10px;
     background-color: $white;
     border-radius: 6px;
     display: flex;
@@ -14,7 +14,13 @@
     cursor: pointer;
     position: relative;
     overflow: hidden;
-    @include typography(18px, 400, 1);
+    @include typography(14px, 400, 1);
+
+    @include small-screen {
+        padding: 0 15px;
+        height: 47px;
+        @include typography(18px, 400, 1);
+    }
 
     &_text,
     .arrow-icon,

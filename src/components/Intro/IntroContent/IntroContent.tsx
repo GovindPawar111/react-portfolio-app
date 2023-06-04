@@ -6,6 +6,8 @@ import mainImage from '../../../images/about/about-img.jpg'
 import { RiExternalLinkLine } from 'react-icons/ri'
 import { downloadResume } from '../../../utils/helper'
 import { Typewriter } from 'react-simple-typewriter'
+import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
+import SocialIcon from '../../sharedComponent/SocialIcon/SocialIcon'
 
 const IntroContent: React.FC = () => {
     return (
@@ -42,11 +44,27 @@ const IntroContent: React.FC = () => {
                     I'm a full-stack developer based in Pune, India. and I'm
                     very passionate and dedicated to my work...
                 </p>
-                <CallToAction
-                    text="Resume"
-                    icon={<RiExternalLinkLine />}
-                    action={downloadResume}
-                />
+                <div className="links">
+                    <CallToAction
+                        text="Resume"
+                        icon={<RiExternalLinkLine />}
+                        action={downloadResume}
+                    />
+                    <div className="social-links">
+                        <SocialIcon
+                            icon={<FaLinkedinIn />}
+                            color={'#fff'}
+                            link={
+                                'https://in.linkedin.com/in/govind-pawar?trk=people-guest_people_search-card&original_referer=https%3A%2F%2Fwww.linkedin.com%2F'
+                            }
+                        />
+                        <SocialIcon
+                            icon={<FaGithub />}
+                            color={'#fff'}
+                            link={'https://github.com/GovindPawar111'}
+                        />
+                    </div>
+                </div>
             </div>
             <div className="right-col">
                 <img src={mainImage} alt="hero section" />
