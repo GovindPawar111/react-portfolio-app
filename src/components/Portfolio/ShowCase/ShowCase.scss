@@ -65,7 +65,11 @@
                 align-items: center;
                 justify-content: space-around;
                 flex-wrap: wrap;
-                min-width: 140px;
+                min-width: 120px;
+
+                @include small-screen {
+                    min-width: 140px;
+                }
 
                 a {
                     text-decoration: none;
@@ -74,7 +78,7 @@
                     align-items: center;
                     justify-content: center;
                     background-color: $yellow;
-                    width: 40%;
+                    width: 45%;
                     border-radius: 6px;
                     @include typography(11px, 400, 18px);
 
