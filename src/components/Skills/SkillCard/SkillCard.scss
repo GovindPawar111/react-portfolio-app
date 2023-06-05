@@ -1,0 +1,43 @@
+@import '../../../style/variable.scss';
+@import '../../../style/mixins.scss';
+
+.skills-data {
+    display: flex;
+    column-gap: 10px;
+    padding: 0.8rem 0;
+
+    @include small-screen {
+        padding: 0.8rem 0;
+    }
+
+    @include medium-screen {
+        padding: 0.8rem;
+    }
+
+    @include large-screen {
+        padding: 1rem;
+    }
+
+    .skills-icon {
+        padding-top: 3px;
+        svg {
+            color: $yellow;
+        }
+    }
+
+    .skills-name {
+        @include typography(14px, 400, 16px);
+
+        @include small-screen {
+            @include typography(18px, 400, 24px);
+        }
+    }
+
+    .skills-level {
+        @include typography(10px, 400, 14px);
+
+        @include small-screen {
+            @include typography(14px, 400, 16px);
+        }
+    }
+}

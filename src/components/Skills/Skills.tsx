@@ -2,6 +2,7 @@ import React from 'react'
 import './Skill.scss'
 import SectionComponent from '../sharedComponent/SectionComponent/SectionComponent'
 import { HiBadgeCheck } from 'react-icons/hi'
+import SkillCard from './SkillCard/SkillCard'
 
 const FrontEndSkillsData = [
     {
@@ -69,21 +70,14 @@ const Skills: React.FC = () => {
                     <h3 className="skills-title">Frontend Development</h3>
                     <div className="skills-box">
                         <div className="skills-group">
-                            {FrontEndSkillsData.map((data) => {
+                            {FrontEndSkillsData.map((skill, index) => {
                                 return (
-                                    <div className="skills-data">
-                                        <div className="skills-icon">
-                                            <HiBadgeCheck />
-                                        </div>
-                                        <div>
-                                            <h3 className="skills-name">
-                                                {data.name}
-                                            </h3>
-                                            <span className="skills-level">
-                                                {data.level}
-                                            </span>
-                                        </div>
-                                    </div>
+                                    <SkillCard
+                                        key={index}
+                                        icon={<HiBadgeCheck />}
+                                        name={skill.name}
+                                        level={skill.level}
+                                    />
                                 )
                             })}
                         </div>
@@ -94,21 +88,14 @@ const Skills: React.FC = () => {
                     <h3 className="skills-title">Backend Development</h3>
                     <div className="skills-box">
                         <div className="skills-group">
-                            {BackEndSkillsData.map((data) => {
+                            {BackEndSkillsData.map((skill, index) => {
                                 return (
-                                    <div className="skills-data">
-                                        <div className="skills-icon">
-                                            <HiBadgeCheck />
-                                        </div>
-                                        <div>
-                                            <h3 className="skills-name">
-                                                {data.name}
-                                            </h3>
-                                            <span className="skills-level">
-                                                {data.level}
-                                            </span>
-                                        </div>
-                                    </div>
+                                    <SkillCard
+                                        key={index}
+                                        icon={<HiBadgeCheck />}
+                                        name={skill.name}
+                                        level={skill.level}
+                                    />
                                 )
                             })}
                         </div>
