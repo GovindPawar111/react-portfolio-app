@@ -65,6 +65,14 @@
         flex-direction: column;
 
         @include small-screen {
+            width: 100%;
+        }
+
+        @include medium-screen {
+            width: 90%;
+        }
+
+        @include large-screen {
             width: 1200px;
         }
     }
