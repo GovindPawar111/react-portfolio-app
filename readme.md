@@ -14,4 +14,4 @@ Open http://localhost:3001 to view it in your browser.
 
 visit the website from give below url.
 
-[Image Gallery](https://govindpawar111.github.io/imageGallery/)
+[My Portfolio](https://govind-pawar.netlify.app/)
