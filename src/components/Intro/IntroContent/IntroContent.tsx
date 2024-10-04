@@ -41,8 +41,8 @@ const IntroContent: React.FC = () => {
                     </span>
                 </h1>
                 <p>
-                    I'm a full-stack developer based in Pune, India. and I'm
-                    very passionate and dedicated to my work...
+                    I'm a full-stack developer based in Pune, India, passionate
+                    about building efficient and scalable web applications...
                 </p>
                 <div className="links">
                     <CallToAction

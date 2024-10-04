@@ -4,11 +4,10 @@ import SectionComponent from '../sharedComponent/SectionComponent/SectionCompone
 import SocialIcon from '../sharedComponent/SocialIcon/SocialIcon'
 
 import { scrollToSection } from './../../utils/helper'
-import { FaGithub, FaLinkedinIn, FaWhatsapp } from 'react-icons/fa'
+import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
 import { MdOutlineMail } from 'react-icons/md'
 
 const Footer: React.FC = () => {
-    const currentYear = new Date().getFullYear()
     return (
         <SectionComponent background="light" className="footer">
             <div className="footer-content-wrapper">
@@ -71,17 +70,11 @@ const Footer: React.FC = () => {
                         color={'#f1592b'}
                         email="pawargovind511@gmail.com"
                     ></SocialIcon>
-                    <SocialIcon
-                        icon={<FaWhatsapp />}
-                        color={'#00E676'}
-                        link={'https://wa.me/7218302823'}
-                    />
                 </div>
 
                 <div className="bottom-bar">
                     <div className="copyright-text">
-                        Copyright &#169; {currentYear} Govind Pawar. | All
-                        Rights Reserved.
+                        Made with passion ❤️ and love.
                     </div>
                 </div>
             </div>

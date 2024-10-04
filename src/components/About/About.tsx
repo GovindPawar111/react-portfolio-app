@@ -41,14 +41,15 @@ const About = (): React.ReactElement => {
                         />
                     </div>
                     <p className="about-description">
-                        I am a passionate full-stack developer with 2 years of
-                        industry experience. Currently, I am working at Cyncly,
-                        Pune. where I have developed a strong expertise in full
-                        stack technology's like HTML, CSS, SCSS, React, Node.js,
-                        MongoDB, and ASP.NET. I have also completed more than 10
-                        personal projects. I strive to create engaging and
-                        user-friendly applications that meet the needs of
-                        clients and end-users alike.
+                        I’m a software developer with 3 years of experience,
+                        currently working at Cyncly, Pune. I specialize in
+                        creating user-friendly web applications using
+                        technologies like React, JavaScript, TypeScript,
+                        Node.js, MongoDB, and ASP.NET. Over the years, I’ve
+                        worked on both front-end and back-end technologies,
+                        building robust, scalable solutions while focusing on
+                        crafting applications that are engaging and intuitive
+                        for end-users.
                     </p>
                     <CallToAction
                         text="Resume"

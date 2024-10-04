@@ -6,39 +6,35 @@ import SkillCard from './SkillCard/SkillCard'
 
 const FrontEndSkillsData = [
     {
-        name: 'HTML',
-        level: 'Intermediate',
+        name: 'React',
+        level: 'Advanced',
     },
     {
-        name: 'CSS & SCSS',
+        name: 'Next.Js',
         level: 'Intermediate',
     },
     {
         name: 'Javascript',
-        level: 'Intermediate',
+        level: 'Advanced',
     },
     {
         name: 'Typescript',
-        level: 'Basic',
-    },
-    {
-        name: 'React',
-        level: 'Intermediate',
-    },
-    {
-        name: 'Bootstrap',
-        level: 'Basic',
+        level: 'Advanced',
     },
     {
         name: 'Zustand',
-        level: 'Basic',
+        level: 'Intermediate',
+    },
+    {
+        name: 'HTML & CSS',
+        level: 'Advanced',
     },
 ]
 
 const BackEndSkillsData = [
     {
         name: 'Node.Js',
-        level: 'Basic',
+        level: 'Intermediate',
     },
     {
         name: 'Express',
@@ -46,19 +42,19 @@ const BackEndSkillsData = [
     },
     {
         name: 'MongoDB',
-        level: 'Intermediate',
+        level: 'Advanced',
     },
     {
-        name: 'ASP.Net',
+        name: 'ASP.Net Core',
         level: 'Intermediate',
     },
     {
         name: 'REST API',
-        level: 'Basic',
+        level: 'Advanced',
     },
     {
-        name: 'Azure',
-        level: 'Basic',
+        name: 'Azure DevOps',
+        level: 'Intermediate',
     },
 ]
 
