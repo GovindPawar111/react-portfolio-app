@@ -6,7 +6,7 @@ export const scrollToSection = (sectionId: string) => {
 
 export const downloadResume = () => {
     const link =
-        'https://drive.google.com/file/d/1k-W8H92s5qxKfN4e9K89snedM5Pu4aUA/view?usp=share_link'
+        'https://drive.google.com/file/d/1yHio74tzIimMw1qOte5M1kB9r2yzuboC/view?usp=sharing'
     window.open(link, '_blank')
 }
 

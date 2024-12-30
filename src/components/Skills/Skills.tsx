@@ -29,6 +29,14 @@ const FrontEndSkillsData = [
         name: 'HTML & CSS',
         level: 'Advanced',
     },
+    {
+        name: 'Jest/ React Testing Library',
+        level: 'Intermediate',
+    },
+    {
+        name: 'Web Optimizations',
+        level: 'Intermediate',
+    },
 ]
 
 const BackEndSkillsData = [
@@ -53,8 +61,16 @@ const BackEndSkillsData = [
         level: 'Advanced',
     },
     {
-        name: 'Azure DevOps',
-        level: 'Intermediate',
+        name: 'Docker',
+        level: 'Basic',
+    },
+    {
+        name: 'Azure',
+        level: 'Basic',
+    },
+    {
+        name: 'CI/CD',
+        level: 'Basic',
     },
 ]
 

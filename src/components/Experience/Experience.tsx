@@ -28,14 +28,14 @@ const ExperienceData = [
         year: '2022 - Present',
         title: 'Software Engineer',
         description:
-            'Currently, I am working at Cyncly in the IS7 Pune Team. During this time, I worked on the latest technologies in web development. from front end to back end, like React, DotNet 6 with MongoDB, and Azure.',
+            'Currently working at Cyncly, Pune, focusing on the Spaces-Flex product. Led front-end development with React and TypeScript, integrated APIs using ASP.NET Core, and optimized UI/UX, improving loading speeds by up to 60%. Mentored junior developers, ensuring code quality and best practices.',
     },
     {
         id: '1',
         year: '2021 - 2022',
         title: 'Software Engineer Intern',
         description:
-            'I finished my 6-month internship at Cyncly. I worked with the Mooble team during this time. During this time, I learned about MVC architecture, Asp.net, and Javascript.',
+            'Completed a 6-month internship at 2020 Spaces, working on the Mooble product. Developed responsive UI components and integrated APIs using MVC architecture with C#. Collaborated in Agile practices to enhance team efficiency and product delivery.',
     },
 ]
 
