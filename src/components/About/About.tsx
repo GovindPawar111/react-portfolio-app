@@ -30,7 +30,7 @@ const About = (): React.ReactElement => {
                         <InfoCard
                             icon={<BiBriefcase />}
                             title={'Experience'}
-                            subtitle={'2+ Years Working'}
+                            subtitle={'3+ Years Working'}
                             onClick={() => infoCardClickHandler('experience')}
                         />
                         <InfoCard
