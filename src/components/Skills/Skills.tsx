@@ -30,7 +30,7 @@ const FrontEndSkillsData = [
         level: 'Advanced',
     },
     {
-        name: 'Jest/ React Testing Library',
+        name: 'Jest/ RTL',
         level: 'Intermediate',
     },
     {
