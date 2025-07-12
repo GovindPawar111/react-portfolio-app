@@ -9,6 +9,9 @@ import { Typewriter } from 'react-simple-typewriter'
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
 import SocialIcon from '../../sharedComponent/SocialIcon/SocialIcon'
 
+const linkedinLink = import.meta.env.VITE_LINKEDIN_LINK
+const githubLink = import.meta.env.VITE_GITHUB_LINK
+
 const IntroContent: React.FC = () => {
     return (
         <div className="intro-content">
@@ -54,14 +57,12 @@ const IntroContent: React.FC = () => {
                         <SocialIcon
                             icon={<FaLinkedinIn />}
                             color={'#fff'}
-                            link={
-                                'https://in.linkedin.com/in/govind-pawar?trk=people-guest_people_search-card&original_referer=https%3A%2F%2Fwww.linkedin.com%2F'
-                            }
+                            link={linkedinLink}
                         />
                         <SocialIcon
                             icon={<FaGithub />}
                             color={'#fff'}
-                            link={'https://github.com/GovindPawar111'}
+                            link={githubLink}
                         />
                     </div>
                 </div>

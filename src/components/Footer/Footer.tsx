@@ -7,6 +7,9 @@ import { scrollToSection } from './../../utils/helper'
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
 import { MdOutlineMail } from 'react-icons/md'
 
+const linkedinLink = import.meta.env.VITE_LINKEDIN_LINK
+const githubLink = import.meta.env.VITE_GITHUB_LINK
+
 const Footer: React.FC = () => {
     return (
         <SectionComponent background="light" className="footer">
@@ -56,14 +59,12 @@ const Footer: React.FC = () => {
                     <SocialIcon
                         icon={<FaLinkedinIn />}
                         color={'#0a66c2'}
-                        link={
-                            'https://in.linkedin.com/in/govind-pawar?trk=people-guest_people_search-card&original_referer=https%3A%2F%2Fwww.linkedin.com%2F'
-                        }
+                        link={linkedinLink}
                     />
                     <SocialIcon
                         icon={<FaGithub />}
                         color={'#0d2636'}
-                        link={'https://github.com/GovindPawar111'}
+                        link={githubLink}
                     />
                     <SocialIcon
                         icon={<MdOutlineMail />}
@@ -74,7 +75,7 @@ const Footer: React.FC = () => {
 
                 <div className="bottom-bar">
                     <div className="copyright-text">
-                        Made with passion ❤️ and love.
+                        Made with ❤️ and passion.
                     </div>
                 </div>
             </div>
