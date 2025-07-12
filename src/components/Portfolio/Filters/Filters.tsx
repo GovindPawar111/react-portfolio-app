@@ -17,8 +17,8 @@ const FiltersData = [
         id: 'static-page',
     },
     {
-        name: 'Other Apps',
-        id: 'other',
+        name: 'Full Stack',
+        id: 'full-Stack',
     },
 ]
 

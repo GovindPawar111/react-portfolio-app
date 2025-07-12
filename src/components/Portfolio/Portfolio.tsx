@@ -10,7 +10,6 @@ import thumb3 from '../../images/portfolio/thumb-3.png'
 import thumb4 from '../../images/portfolio/thumb-4.png'
 import thumb5 from '../../images/portfolio/thumb-5.png'
 import thumb6 from '../../images/portfolio/thumb-6.png'
-import thumb7 from '../../images/portfolio/thumb-7.png'
 
 const projectsData: ProjectsData[] = [
     {
@@ -45,42 +44,33 @@ const projectsData: ProjectsData[] = [
     },
     {
         id: 4,
-        name: 'Blog Post Node App',
-        tags: ['other'],
-        liveLink: 'https://blogpostnodeapplication.onrender.com/',
-        githubLink: 'https://github.com/GovindPawar111/blog_post_app',
+        name: 'CoderBlog',
+        tags: ['react-app', 'full-Stack'],
+        liveLink: 'https://coder-blog-application.netlify.app/',
+        githubLink:
+            'https://github.com/GovindPawar111/typescript-mern-coder-blog-app',
         media: {
             thumbnail: thumb4,
         },
     },
     {
         id: 5,
-        name: 'Expense Tracker App',
-        tags: ['react-app'],
-        liveLink: 'https://expense-traker-application.netlify.app/',
-        githubLink: 'https://github.com/GovindPawar111/expesnseTrackerApp',
+        name: 'Blog Post Node App',
+        tags: ['full-Stack', 'react-app'],
+        liveLink: 'https://blogpostnodeapplication.onrender.com/',
+        githubLink: 'https://github.com/GovindPawar111/blog_post_app',
         media: {
             thumbnail: thumb5,
         },
     },
     {
         id: 6,
-        name: 'Note Taking App',
-        tags: ['react-app'],
-        liveLink: 'https://notetaking-application.netlify.app/',
-        githubLink: 'https://github.com/GovindPawar111/react-note-app',
-        media: {
-            thumbnail: thumb6,
-        },
-    },
-    {
-        id: 7,
         name: 'React Portfolio App',
         tags: ['react-app'],
         liveLink: 'https://govind-pawar.netlify.app/',
         githubLink: 'https://github.com/GovindPawar111/react-portfolio-app',
         media: {
-            thumbnail: thumb7,
+            thumbnail: thumb6,
         },
     },
 ]
